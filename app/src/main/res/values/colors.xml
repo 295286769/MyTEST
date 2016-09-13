@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <!-- 背景色 -->
+    <color name="bg_color">#ffecf0f3</color>
+    <!-- 白色 -->
+    <color name="white">#ffffffff</color>
+    <!-- 白色 -->
+    <color name="white_tran">#bbffffff</color>
+
+    <!-- 灰色 -->
+    <color name="gray">#ff9b9b9b</color>
+    <!-- 透明色 -->
+    <color name="trans">#00000000</color>
+    <!-- 黑色 透明度bb -->
+    <color name="black_color_bb">#bb000000</color>
+    <!-- 黑色 透明度80 -->
+    <color name="black_color_80">#80000000</color>
+    <!-- 黑色 -->
+    <color name="black">#ff000000</color>
+    <!-- 黑色 透明度50 -->
+    <color name="black_color_50">#50000000</color>
+    <!-- 黑色 透明度20 -->
+    <color name="black_color_20">#20000000</color>
+    <!-- 蓝色 -->
+    <color name="blue">#ff33b5e5</color>
+    <!-- UI主题风格蓝色 -->
+    <color name="blue_theme">#ff279ae3</color>
+    <!-- UI主题风格红色 -->
+    <color name="red_theme">#ffff576b</color>
+    <!-- UI主题风格绿色 -->
+    <color name="green_theme">#ff7ed321</color>
+    <!-- UI主题风格橙色 -->
+    <color name="orange_theme">#fff7a550</color>
+
+    <color name="gold">#ffffd20b</color>
+    <!-- 灰色 -->
+    <color name="color_bg_gray">#F6F6FF</color>
+    <!-- 基本颜色-->
+    <color name="color_60_black">#60000000</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorAllTextBlack">#4A4A4A</color>
+
+
+    <!--管理模块测试使用灰色背景（测试！！）-->
+    <color name="wealth_gray_bg">#F0EFF5</color>
+    <color name="wealth_font">#4A4A4A</color>
+    <color name="wealth_line">#C7C6CB</color>
+    <color name="wealth_mild_gray_bg">#DDD</color>
+    <color name="darker_gray">#aaa</color>
+    <color name="wealth_slidbar_gray">#e6e6e6</color>
+
+    <color name="actionsheet_gray">#8F8F8F</color>
+    <color name="alertdialog_line">#c6c6c6</color>
+    <color name="actionsheet_blue">#037BFF</color>
+    <color name="actionsheet_red">#FD4A2E</color>
+	
+</resources>

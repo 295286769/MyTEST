@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.richfinancial.qiyiplus">
+
+    <!-- 读取通讯录权限 -->
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.richfinancial.qiyifinance.activity.main.MainAty">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- 启动页 -->
+        <activity android:name="com.richfinancial.qiyifinance.activity.StartUpAty" />
+        <!-- 主页 -->
+        <!--<activity
+            android:name="com.richfinancial.qiyifinance.activity.main.MainAty"
+            android:screenOrientation="portrait" />-->
+
+        <!--管理-->
+        <activity
+            android:name="com.richfinancial.qiyifinance.activity.manage.ManageAty"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.richfinancial.qiyifinance.activity.manage.AccountDetailAty"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.richfinancial.qiyifinance.activity.manage.CustomerManageAty"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.richfinancial.qiyifinance.activity.manage.AddCustomerAty"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.richfinancial.qiyifinance.activity.manage.EditCustomerAty"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.richfinancial.qiyifinance.activity.manage.SupplierManageAty"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.richfinancial.qiyifinance.activity.manage.ProjectManageAty"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.richfinancial.qiyifinance.activity.manage.AddProjectAty"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.richfinancial.qiyifinance.activity.manage.EditProjectAty"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.richfinancial.qiyifinance.activity.manage.DepartmentManageAty"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.richfinancial.qiyifinance.activity.manage.EmployeeManageAty"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.richfinancial.qiyifinance.activity.manage.AddEmployeeAty"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.richfinancial.qiyifinance.activity.manage.EditEmployeeAty"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.richfinancial.qiyifinance.activity.manage.IncomeTypeAty"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.richfinancial.qiyifinance.activity.manage.ExpendTypeAty"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.richfinancial.qiyifinance.activity.manage.AddIncomeTypeAty"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.richfinancial.qiyifinance.activity.manage.EditIncomeTypeAty"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.richfinancial.qiyifinance.activity.manage.SelectNodeActivity"
+            android:screenOrientation="portrait" />
+
+        <!--批量导入联系人-->
+        <activity android:name="com.richfinancial.qiyifinance.activity.CustomerBulkImportAty" android:screenOrientation="portrait"/>
+
+        <activity android:name="com.richfinancial.qiyifinance.activity.manage.ParitiesSettingAty" android:screenOrientation="portrait"/>
+
+        <activity android:name="com.richfinancial.qiyifinance.activity.manage.AddParitiesAty" android:screenOrientation="portrait" />
+
+        <activity android:name="com.richfinancial.qiyifinance.activity.manage.EditParitiesAty" android:screenOrientation="portrait"/>
+
+
+        <!-- 登录相关 -->
+        <activity
+            android:name="com.richfinancial.qiyifinance.activity.login.ForgetPwdAty"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.richfinancial.qiyifinance.activity.login.LoginAty"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.richfinancial.qiyifinance.activity.login.ModifyPwdAty"
+            android:screenOrientation="portrait" />
+        <!-- 个人信息页面 -->
+        <activity
+            android:name="com.richfinancial.qiyifinance.activity.my.PersonalInformationAty"
+            android:screenOrientation="portrait" />
+        <!-- 库存信息页 -->
+        <activity
+            android:name="com.richfinancial.qiyifinance.activity.stock.StockMsgAty"
+            android:screenOrientation="portrait" />
+        <!-- 库存账单页 -->
+        <activity
+            android:name="com.richfinancial.qiyifinance.activity.stock.StockDocketAty"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.richfinancial.qiyifinance.activity.my.ChangeNameAty"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.richfinancial.qiyifinance.activity.my.ChangeDutyAty"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.richfinancial.qiyifinance.activity.my.ChangeMailAty"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.richfinancial.qiyifinance.activity.my.ChangePhoneAty"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.richfinancial.qiyifinance.activity.my.ChangeComapanyNameAty"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.richfinancial.qiyifinance.activity.my.ChangeIndustryTypeAty"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.richfinancial.qiyifinance.activity.my.ChangePwdAty"
+            android:screenOrientation="portrait" />
+        <!-- 子用户页面 -->
+        <activity
+            android:name="com.richfinancial.qiyifinance.activity.my.MyChildUserAty"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.richfinancial.qiyifinance.activity.my.UserScanAty"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.richfinancial.qiyifinance.activity.my.UserAddAty"
+            android:screenOrientation="portrait" />
+        <!-- 应付款 -->
+        <activity
+            android:name="com.richfinancial.qiyifinance.activity.home.PayableAty"
+            android:screenOrientation="portrait" />
+        <!-- 应收款 -->
+        <activity
+            android:name="com.richfinancial.qiyifinance.activity.home.ReceivablesAty"
+            android:screenOrientation="portrait" />
+        <!-- 代账报税 -->
+        <activity android:name="com.richfinancial.qiyifinance.activity.tax.AccountTaxAty"
+            android:screenOrientation="portrait"/>
+        <!--以下 企易财-->
+        <!-- 相机 -->
+        <uses-permission android:name="android.permission.CAMERA" />
+        <!-- 请求网络 -->
+        <uses-permission android:name="android.permission.INTERNET" />
+        <!--以上 企易财-->
+    </application>
+
+</manifest>

@@ -1,0 +1,54 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#f6f6ff">
+    <!-- title layout -->
+    <include android:id="@+id/title" layout="@layout/layout_title" />
+    <!-- 用户 layout -->
+    <LinearLayout
+        android:id="@+id/ll_user_hint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/title"
+        >
+            <!-- 正常 -->
+            <TextView
+                android:id="@+id/txt_tab_normal_user"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:textSize="@dimen/text_size_middle"
+                android:textColor="@color/black"
+                android:text="@string/s_txtv_normal_user"
+                android:gravity="center"
+                />
+            <!-- 已删除 -->
+            <TextView
+                android:id="@+id/txt_tab_delete_user"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_middle"
+                android:text="@string/s_txtv_delete_user"
+                android:gravity="center"
+                />
+    </LinearLayout>
+    <!-- 列表显示 layout -->
+    <com.richfinancial.qiyifinance.ui.TabScroll
+        android:id="@+id/id_tab_scroll"
+        android:layout_width="fill_parent"
+        android:layout_height="5dp"
+        android:layout_alignBottom="@id/ll_user_hint"/>
+    <android.support.v4.view.ViewPager
+        android:id="@+id/id_viewPager"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/id_tab_scroll"
+        android:background="@color/white"
+        android:orientation="vertical" >
+    </android.support.v4.view.ViewPager>
+
+</LinearLayout>

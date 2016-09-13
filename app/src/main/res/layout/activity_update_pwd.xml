@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <!-- title layout -->
+    <include layout="@layout/layout_title" />
+    <!-- 设置密码 layout-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+        <!-- 上半部信息 layout -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">\
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/black_color_20" />
+            <!-- 旧密码 Layout -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:gravity="center_vertical"
+                android:layout_height="50dp"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:id="@+id/ll_old_pwd">
+                <!-- 旧密码提示文字-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/s_txtv_old_pwd" />
+                <!-- 旧密码 输入框-->
+                <EditText
+                    android:id="@+id/textv_old_pwd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/trans"
+                    android:imeOptions="actionNext"
+                    android:layout_marginRight="10dp"
+                    android:gravity="right|center_vertical"
+                    android:inputType="textPassword"
+                    android:layout_weight="1"
+                    android:maxLength="20"
+                    android:textColorHint="@color/black_color_50"
+                    android:textCursorDrawable="@null"
+                    android:textSize="@dimen/text_size_middle"
+                    android:hint="@string/s_txtv_old_pwd_hint"
+                    />
+            </LinearLayout>
+            <!-- 分割线 -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/black_color_20" />
+        </LinearLayout>
+            <!-- 分割线 -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/black_color_20" />
+            <!-- 新密码 Layout -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:gravity="center_vertical"
+                android:layout_height="50dp"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:id="@+id/ll_new_pwd">
+                <!-- 新密码 提示文字 -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/s_txtv_new_pwd" />
+                <!-- 新密码 输入框 -->
+                <EditText
+                    android:id="@+id/textv_new_pwd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/trans"
+                    android:imeOptions="actionNext"
+                    android:inputType="textPassword"
+                    android:layout_marginRight="10dp"
+                    android:gravity="right|center_vertical"
+                    android:layout_weight="1"
+                    android:maxLength="20"
+                    android:textColorHint="@color/black_color_50"
+                    android:textCursorDrawable="@null"
+                    android:textSize="@dimen/text_size_middle"
+                    android:hint="@string/s_txtv_new_pwd_hint" />
+            </LinearLayout>
+            <!-- 分割线 -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_alignParentBottom="true"
+                android:background="@color/black_color_20" />
+            <!-- 密码确认 Layout -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:gravity="center_vertical"
+                android:layout_height="50dp"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:id="@+id/ll_conform_pwd">
+                <!-- 密码确认提示文字-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/s_txtv_confirm_pwd" />
+                <!-- 确认密码 输入框-->
+                <EditText
+                    android:id="@+id/textv_conform_pwd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/trans"
+                    android:imeOptions="actionNext"
+                    android:layout_marginRight="10dp"
+                    android:gravity="right|center_vertical"
+                    android:inputType="textPassword"
+                    android:layout_weight="1"
+                    android:maxLength="20"
+                    android:textColorHint="@color/black_color_50"
+                    android:textCursorDrawable="@null"
+                    android:textSize="@dimen/text_size_middle"
+                    android:hint="@string/s_txtv_confirm_pwd_hint"
+                    />
+            </LinearLayout>
+            <!-- 分割线 -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/black_color_20" />
+        </LinearLayout>
+        <!-- 下半部分操作区域-->
+        <!-- 修改密码按钮 -->
+        <Button
+            android:id="@+id/btn_update"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dip"
+            android:layout_marginRight="30dip"
+            android:layout_marginTop="50dip"
+            android:text="@string/btn_update_pwd"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_middle" />
+    </LinearLayout>
+
+

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/layout_title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        >
+
+        <TextView
+            android:id="@+id/txtv_wait_audit"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:text="待审核"
+            android:textColor="@color/wealth_font"
+            android:textSize="@dimen/text_size_middle"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/txtv_already_pass"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:text="已通过"
+            android:textColor="@color/wealth_font"
+            android:textSize="@dimen/text_size_middle"
+            android:gravity="center"
+            />
+
+        <TextView
+            android:id="@+id/txtv_unpass"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:text="未通过"
+            android:textColor="@color/wealth_font"
+            android:textSize="@dimen/text_size_middle"
+            android:gravity="center"
+            />
+    </LinearLayout>
+
+    <!-- 列表显示 layout -->
+    <com.richfinancial.qiyifinance.ui.TabScroll
+        android:id="@+id/tab_scroll"
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"/>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/tab_scroll"
+        android:orientation="vertical" >
+    </android.support.v4.view.ViewPager>
+
+
+</LinearLayout>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!-- title -->
+    <include layout="@layout/layout_title" />
+
+    <!-- 应收、已收、汇总title -->
+    <LinearLayout
+        android:id="@+id/ll_user_hint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/title"
+        >
+        <!-- 应收 -->
+        <TextView
+            android:id="@+id/txtv_tab_uncollected"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:textSize="@dimen/text_size_middle"
+            android:textColor="@color/black"
+            android:text="@string/s_txtv_tab_uncollected"
+            android:gravity="center"
+            />
+        <!-- 已收 -->
+        <TextView
+            android:id="@+id/txtv_tab_received"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_middle"
+            android:text="@string/s_txtv_tab_received"
+            android:gravity="center"
+            />
+        <!-- 汇总 -->
+        <TextView
+            android:id="@+id/txtv_tab_summary"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_middle"
+            android:text="@string/s_txtv_tab_summary"
+            android:gravity="center"
+            />
+    </LinearLayout>
+    <!-- 列表显示 layout -->
+    <com.richfinancial.qiyifinance.ui.TabScroll
+        android:id="@+id/id_tab_scroll"
+        android:layout_width="fill_parent"
+        android:layout_height="5dp"
+        android:layout_alignBottom="@id/ll_user_hint"/>
+    <android.support.v4.view.ViewPager
+        android:id="@+id/id_viewPager"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/id_tab_scroll"
+        android:background="@color/white"
+        android:orientation="vertical" >
+    </android.support.v4.view.ViewPager>
+
+</LinearLayout>

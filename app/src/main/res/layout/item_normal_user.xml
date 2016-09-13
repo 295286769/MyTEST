@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/lay_content"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    >
+    <RelativeLayout
+        android:id="@+id/rl_noraml_user"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+        <!-- 用户姓名ID layout-->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_centerVertical="true"
+            android:id="@+id/ll_uer_id"
+            android:orientation="vertical">
+            <!-- 用户姓名 提示文字-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/img_item_user"
+                    android:background="@drawable/img_user"/>
+                <TextView
+                    android:id="@+id/textv_item_user_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_middle"
+                    android:text="请设姓名"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:layout_marginLeft="80dp"
+            android:id="@+id/ll_mail_phone"
+            android:layout_toRightOf="@+id/ll_uer_id"
+            android:orientation="vertical">
+                <TextView
+                    android:id="@+id/textv_mail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_middle"
+                    android:text="1234567@qq.com"/>
+                <!-- 用户ID 提示文字-->
+                <TextView
+                    android:id="@+id/textv_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textColor="@color/gray"
+                    android:layout_alignParentRight="true"
+                    android:textSize="@dimen/text_size_middle"
+                    android:hint="18640124561"/>
+
+        </LinearLayout>
+        <!-- 右侧箭头-->
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imgbtn_right"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/img_back_right"
+            />
+        <!-- 分割线 -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignParentBottom="true"
+            android:background="@color/black_color_20" />
+    </RelativeLayout>
+
+</LinearLayout>

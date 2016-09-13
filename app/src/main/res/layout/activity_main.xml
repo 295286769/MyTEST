@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/lay_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+        <!-- 底部菜单的RadioGroup -->
+        <RadioGroup
+            android:id="@+id/rg_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal"
+            android:background="@drawable/border_gray_white">
+            <!-- 首页button -->
+            <RadioButton
+                android:id="@+id/rbtn_home"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingTop="6dp"
+                android:paddingBottom="6dp"
+                android:button="@null"
+                android:checked="true"
+                android:text="@string/tab_home"
+                android:gravity="center"
+                android:drawableTop="@drawable/selector_radio_btn_home"
+                android:textColor="@drawable/selector_radio_text_color_tab" />
+            <!-- 账户button -->
+            <RadioButton
+                android:id="@+id/rbtn_account"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingTop="6dp"
+                android:paddingBottom="6dp"
+                android:button="@null"
+                android:text="@string/tab_account"
+                android:gravity="center"
+                android:drawableTop="@drawable/selector_radio_btn_account"
+                android:textColor="@drawable/selector_radio_text_color_tab" />
+            <!-- 库存button -->
+            <!--<RadioButton-->
+                <!--android:id="@+id/rbtn_stock"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_weight="1"-->
+                <!--android:paddingTop="6dp"-->
+                <!--android:paddingBottom="6dp"-->
+                <!--android:button="@null"-->
+                <!--android:text="@string/tab_stock"-->
+                <!--android:gravity="center"-->
+                <!--android:drawableTop="@drawable/selector_radio_btn_stock"-->
+                <!--android:textColor="@drawable/selector_radio_text_color_tab" />-->
+            <!-- 报税button -->
+            <RadioButton
+                android:id="@+id/rbtn_tax"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingTop="6dp"
+                android:paddingBottom="6dp"
+                android:button="@null"
+                android:text="@string/tab_tax"
+                android:gravity="center"
+                android:drawableTop="@drawable/selector_radio_btn_tax"
+                android:textColor="@drawable/selector_radio_text_color_tab" />
+            <!-- 我的button -->
+            <RadioButton
+                android:id="@+id/rbtn_setting"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingTop="6dp"
+                android:paddingBottom="6dp"
+                android:button="@null"
+                android:text="@string/tab_setting"
+                android:gravity="center"
+                android:drawableTop="@drawable/selector_radio_btn_my"
+                android:textColor="@drawable/selector_radio_text_color_tab" />
+        </RadioGroup>
+
+
+    <!-- 首页容器 -->
+    <FrameLayout
+        android:id="@+id/fl_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/rg_layout" />
+
+    <!--阴影部分-->
+    <View
+        android:id="@+id/v_shadow"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black_color_80"
+        android:visibility="gone" />
+</RelativeLayout>

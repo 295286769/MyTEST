@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f6f6ff"
+    android:orientation="vertical">
+    <!-- title layout -->
+    <include layout="@layout/layout_title" />
+
+    <!-- 信息验证区域 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+        <!-- 上半部信息区域 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <!-- 分割线 -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginTop="20dp"
+                android:background="@color/black_color_20" />
+            <!-- 输入新邮箱 Layout -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:gravity="center_vertical"
+                android:layout_height="50dp"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:id="@+id/ll_phone_code">
+                <!-- 输入新邮箱 提示文字 -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/str_phone_input" />
+                <!-- 新邮箱 输入框 -->
+                <EditText
+                    android:id="@+id/edit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/trans"
+                    android:layout_marginRight="10dp"
+                    android:gravity="right|center_vertical"
+                    android:layout_weight="1"
+                    android:imeOptions="actionNext"
+                    android:maxLength="11"
+                    android:inputType="number"
+                    android:textColorHint="@color/black_color_50"
+                    android:textCursorDrawable="@null"
+                    android:textSize="@dimen/text_size_small"
+                    android:hint="请填写新手机号码" />
+            </LinearLayout>
+            <!-- 分割线 -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_alignParentBottom="true"
+                android:background="@color/black_color_20" />
+            <!-- 分割线 -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_alignParentBottom="true"
+                android:background="@color/black_color_20" />
+        </LinearLayout>
+        <!-- 下一步按钮 -->
+        <Button
+            android:id="@+id/btn_next"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dip"
+            android:layout_marginRight="30dip"
+            android:layout_marginTop="50dip"
+            android:text="@string/btn_next"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_middle" />
+
+    </LinearLayout>
+</LinearLayout>
+

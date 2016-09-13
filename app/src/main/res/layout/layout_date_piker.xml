@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/wealth_line"/>
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center"
+        >
+
+        <TextView
+            android:id="@+id/txtv_subtract_date"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:text="@string/str_txtv_subtract_date"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="13dp"
+            android:textSize="@dimen/text_size_middle"
+            />
+
+        <TextView
+            android:id="@+id/txtv_show_date"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="2016-05"
+            android:gravity="center"
+            android:textSize="@dimen/text_size_middle"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:id="@+id/txtv_add_date"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:text="@string/str_txtv_add_date"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="13dp"
+            android:textSize="@dimen/text_size_middle"
+            />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/wealth_line"/>
+</LinearLayout>

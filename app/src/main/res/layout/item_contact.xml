@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <!-- 这个TextView就是显示字母的 -->
+    <TextView
+        android:id="@+id/txtv_item_tag"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/wealth_slidbar_gray"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dip"
+        android:text="A"
+        android:visibility="visible" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/white"
+        >
+
+        <CheckBox
+            android:id="@+id/ck_select_contact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:enabled="false"
+            />
+
+        <TextView
+            android:id="@+id/txtv_item_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/ck_select_contact"
+            android:text="安倍"/>
+
+        <TextView
+            android:id="@+id/txtv_item_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="50dp"
+            android:text="15840081160"/>
+    </RelativeLayout>
+
+</LinearLayout>

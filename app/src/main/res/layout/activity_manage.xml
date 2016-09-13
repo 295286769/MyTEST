@@ -1,0 +1,522 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/wealth_gray_bg"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <include layout="@layout/layout_title" />
+
+            <RelativeLayout
+                android:id="@+id/rl_audit_accounts"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:background="@color/white">
+
+                <ImageView
+                    android:id="@+id/iv_audit_accounts"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="13dp"
+                    android:src="@drawable/img_user" />
+
+                <TextView
+                    android:id="@+id/txtv_audit_accounts"
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="13dp"
+                    android:layout_toEndOf="@+id/iv_audit_accounts"
+                    android:gravity="center"
+                    android:text="@string/str_txtv_audit_accounts"
+                    android:textColor="@color/wealth_font"
+                    android:textSize="@dimen/text_size_middle" />
+
+                <ImageView
+                    android:id="@+id/iv_red_dot1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_toStartOf="@+id/imageView1"
+                    android:visibility="invisible"
+                    android:src="@drawable/img_front_arrow" />
+
+                <ImageView
+                    android:id="@+id/imageView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignTop="@+id/iv_red_dot1"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="13dp"
+                    android:src="@drawable/img_front_arrow" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/wealth_line" />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginTop="20dp"
+                android:background="@color/wealth_line" />
+
+            <RelativeLayout
+                android:id="@+id/rl_customer_manage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:background="@color/white">
+
+                <ImageView
+                    android:id="@+id/iv_customer_manage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="13dp"
+                    android:src="@drawable/img_user" />
+
+                <TextView
+                    android:id="@+id/txtv_customer_manage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="13dp"
+                    android:layout_toEndOf="@+id/iv_customer_manage"
+                    android:gravity="center"
+                    android:text="@string/str_txtv_customer_manage"
+                    android:textColor="@color/wealth_font"
+                    android:textSize="@dimen/text_size_middle" />
+
+                <ImageView
+                    android:id="@+id/iv_red_dot2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_toStartOf="@+id/imageView2"
+                    android:visibility="invisible"
+                    android:src="@drawable/img_front_arrow" />
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignTop="@+id/iv_red_dot2"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="13dp"
+                    android:src="@drawable/img_front_arrow" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="10dp"
+                android:background="@color/wealth_line" />
+
+            <RelativeLayout
+                android:id="@+id/rl_supplier_manage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:background="@color/white">
+
+                <ImageView
+                    android:id="@+id/iv_supplier_manage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="13dp"
+                    android:src="@drawable/img_user" />
+
+                <TextView
+                    android:id="@+id/txtv_supplier_manage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="13dp"
+                    android:layout_toEndOf="@+id/iv_supplier_manage"
+                    android:gravity="center"
+                    android:text="@string/str_txtv_supplier_manage"
+                    android:textColor="@color/wealth_font"
+                    android:textSize="@dimen/text_size_middle" />
+
+                <ImageView
+                    android:id="@+id/iv_red_dot3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_toStartOf="@+id/imageView3"
+                    android:visibility="invisible"
+                    android:src="@drawable/img_front_arrow" />
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignTop="@+id/iv_red_dot3"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="13dp"
+                    android:src="@drawable/img_front_arrow" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/wealth_line" />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginTop="20dp"
+                android:background="@color/wealth_line" />
+
+            <RelativeLayout
+                android:id="@+id/rl_project_manage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:background="@color/white">
+
+                <ImageView
+                    android:id="@+id/iv_project_manage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="13dp"
+                    android:src="@drawable/img_user" />
+
+                <TextView
+                    android:id="@+id/txtv_project_manage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="13dp"
+                    android:layout_toEndOf="@+id/iv_project_manage"
+                    android:gravity="center"
+                    android:text="@string/str_txtv_project_manage"
+                    android:textColor="@color/wealth_font"
+                    android:textSize="@dimen/text_size_middle" />
+
+                <ImageView
+                    android:id="@+id/iv_red_dot4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_toStartOf="@+id/imageView4"
+                    android:visibility="invisible"
+                    android:src="@drawable/img_front_arrow" />
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignTop="@+id/iv_red_dot4"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="13dp"
+                    android:src="@drawable/img_front_arrow" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="10dp"
+                android:background="@color/wealth_line" />
+
+            <RelativeLayout
+                android:id="@+id/rl_department_manage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:background="@color/white">
+
+                <ImageView
+                    android:id="@+id/iv_department_manage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="13dp"
+                    android:src="@drawable/img_user" />
+
+                <TextView
+                    android:id="@+id/txtv_department_manage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="13dp"
+                    android:layout_toEndOf="@+id/iv_department_manage"
+                    android:gravity="center"
+                    android:text="@string/str_txtv_department_manage"
+                    android:textColor="@color/wealth_font"
+                    android:textSize="@dimen/text_size_middle" />
+
+                <ImageView
+                    android:id="@+id/iv_red_dot5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_toStartOf="@+id/imageView5"
+                    android:visibility="invisible"
+                    android:src="@drawable/img_front_arrow" />
+
+                <ImageView
+                    android:id="@+id/imageView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignTop="@+id/iv_red_dot5"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="13dp"
+                    android:src="@drawable/img_front_arrow" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="10dp"
+                android:background="@color/wealth_line" />
+
+            <RelativeLayout
+                android:id="@+id/rl_employee_manage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:background="@color/white">
+
+                <ImageView
+                    android:id="@+id/iv_employee_manage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="13dp"
+                    android:src="@drawable/img_user" />
+
+                <TextView
+                    android:id="@+id/txtv_employee_manage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="13dp"
+                    android:layout_toEndOf="@+id/iv_employee_manage"
+                    android:gravity="center"
+                    android:text="@string/str_txtv_employee_manage"
+                    android:textColor="@color/wealth_font"
+                    android:textSize="@dimen/text_size_middle" />
+
+                <ImageView
+                    android:id="@+id/iv_red_dot6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_toStartOf="@+id/imageView6"
+                    android:visibility="invisible"
+                    android:src="@drawable/img_front_arrow" />
+
+                <ImageView
+                    android:id="@+id/imageView6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignTop="@+id/iv_red_dot6"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="13dp"
+                    android:src="@drawable/img_front_arrow" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/wealth_line" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginTop="20dp"
+                android:background="@color/wealth_line" />
+
+            <RelativeLayout
+                android:id="@+id/rl_income_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:background="@color/white">
+
+                <ImageView
+                    android:id="@+id/iv_income_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="13dp"
+                    android:src="@drawable/img_user" />
+
+                <TextView
+                    android:id="@+id/txtv_income_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="13dp"
+                    android:layout_toEndOf="@+id/iv_income_type"
+                    android:gravity="center"
+                    android:text="@string/str_txtv_income_type"
+                    android:textColor="@color/wealth_font"
+                    android:textSize="@dimen/text_size_middle" />
+
+                <ImageView
+                    android:id="@+id/iv_red_dot7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_toStartOf="@+id/imageView7"
+                    android:visibility="invisible"
+                    android:src="@drawable/img_front_arrow" />
+
+                <ImageView
+                    android:id="@+id/imageView7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignTop="@+id/iv_red_dot7"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="13dp"
+                    android:src="@drawable/img_front_arrow" />
+            </RelativeLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="10dp"
+                android:background="@color/wealth_line" />
+
+            <RelativeLayout
+                android:id="@+id/rl_expend_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:background="@color/white">
+
+                <ImageView
+                    android:id="@+id/iv_expend_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="13dp"
+                    android:src="@drawable/img_user" />
+
+                <TextView
+                    android:id="@+id/txtv_expend_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="13dp"
+                    android:layout_toEndOf="@+id/iv_expend_type"
+                    android:gravity="center"
+                    android:text="@string/str_txtv_expend_type"
+                    android:textColor="@color/wealth_font"
+                    android:textSize="@dimen/text_size_middle" />
+
+                <ImageView
+                    android:id="@+id/iv_red_dot8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_toStartOf="@+id/imageView8"
+                    android:visibility="invisible"
+                    android:src="@drawable/img_front_arrow" />
+
+                <ImageView
+                    android:id="@+id/imageView8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignTop="@+id/iv_red_dot8"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="13dp"
+                    android:src="@drawable/img_front_arrow" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/wealth_line" />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginTop="20dp"
+                android:background="@color/wealth_line" />
+
+            <RelativeLayout
+                android:id="@+id/rl_parities_setting"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:background="@color/white">
+
+                <ImageView
+                    android:id="@+id/iv_parities_setting"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="13dp"
+                    android:src="@drawable/img_user" />
+
+                <TextView
+                    android:id="@+id/txtv_parities_setting"
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="13dp"
+                    android:layout_toEndOf="@+id/iv_parities_setting"
+                    android:gravity="center"
+                    android:text="@string/str_txtv_parities_setting"
+                    android:textColor="@color/wealth_font"
+                    android:textSize="@dimen/text_size_middle" />
+
+                <ImageView
+                    android:id="@+id/iv_red_dot9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_toStartOf="@+id/imageView9"
+                    android:visibility="invisible"
+                    android:src="@drawable/img_front_arrow" />
+
+                <ImageView
+                    android:id="@+id/imageView9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignTop="@+id/iv_red_dot9"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="13dp"
+                    android:src="@drawable/img_front_arrow" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/wealth_line" />
+
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>
